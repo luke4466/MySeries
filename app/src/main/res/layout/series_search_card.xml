@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:elevation="4dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:clickable="true"
+            android:transitionName="poster"
+            android:scaleType="centerCrop"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/poster" />
+        <TextView
+            android:text="Tytuł"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:maxLines="2"
+            android:ellipsize="marquee"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/poster" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:text="2017-2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/year"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/poster" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/year"
+            android:layout_toEndOf="@+id/poster"
+            android:id="@+id/runtime" />
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genre"
+            android:layout_below="@+id/runtime"
+            android:layout_toEndOf="@+id/poster" />
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imdbRating"
+            android:layout_below="@+id/genre"
+            android:layout_toEndOf="@+id/poster" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingTop="0dp"
+            android:text=" | "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spacer"
+            android:layout_alignBaseline="@+id/imdbRating"
+            android:layout_alignBottom="@+id/imdbRating"
+            android:layout_toEndOf="@+id/imdbRating" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imdbVotes"
+            android:layout_alignBaseline="@+id/spacer"
+            android:layout_alignBottom="@+id/spacer"
+            android:layout_toEndOf="@+id/spacer" />
+
+        <ImageView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="8dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_favorite_black_48dp"
+            android:id="@+id/followingButton"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/watchedButton" />
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="8dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_watched_black"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/watchedButton" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

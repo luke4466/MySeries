@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        id="@+id/tab_watching"
+        icon="@drawable/ic_favorite_white_24dp"
+        title="Following"
+        barColorWhenSelected="#000000"/>
+
+    <tab
+        id="@+id/tab_soon"
+        icon="@drawable/ic_date_range_white_24dp"
+        title="Soon"
+        barColorWhenSelected="#000000"/>
+
+
+    <tab
+        id="@+id/tab_search"
+        icon="@drawable/ic_movie_white"
+        title="Search"
+        barColorWhenSelected="#000000"/>
+    <tab
+        id="@+id/tab_watched"
+        icon="@drawable/ic_watched"
+        title="Watched"
+        barColorWhenSelected="#000000"/>
+
+</tabs>
